@@ -1,7 +1,7 @@
-(setq visible-bell t
-      font-lock-maximum-decoration t
-      color-theme-is-global t
-      truncate-partial-width-windows nil)
+;; (setq visible-bell t
+;;       font-lock-maximum-decoration t
+;;       color-theme-is-global t
+;;       truncate-partial-width-windows nil)
 
 (set-face-background 'region "#464740")
 
