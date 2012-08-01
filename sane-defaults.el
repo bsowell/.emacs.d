@@ -50,7 +50,7 @@
 (setq column-number-mode t)
 
 ;; Lines should be 80 characters wide, not 72
-(setq fill-column 80)
+(setq fill-column 79)
 
 ;; Save a list of recent files visited.
 (recentf-mode 1)

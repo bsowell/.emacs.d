@@ -58,8 +58,8 @@
 (require 'mode-mappings)
 
 ;; Annoying arrows mode
-(require 'annoying-arrows-mode)
-(global-annoying-arrows-mode)
+;; (require 'annoying-arrows-mode)
+;; (global-annoying-arrows-mode)
 
 ;; Functions (load all files in defuns-dir)
 (setq defuns-dir (expand-file-name "defuns" dotfiles-dir))
@@ -78,7 +78,8 @@
 
 ;; Fill column indicator
 (require 'fill-column-indicator)
-(setq fci-rule-color "#111122")
+;;(setq fci-rule-color "#111122")
+(setq fci-rule-color "#cccccc")
 
 ;; Browse kill ring
 (require 'browse-kill-ring)
@@ -113,3 +114,4 @@
 ;; Conclude init by setting up specifics for the current user
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
+(put 'ido-exit-minibuffer 'disabled nil)
