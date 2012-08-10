@@ -93,4 +93,12 @@
 (add-to-list 'auto-mode-alist '("access\\.conf\\'" . apache-mode))
 (add-to-list 'auto-mode-alist '("sites-\\(available\\|enabled\\)/" . apache-mode))
 
+;; C++
+(add-to-list 'auto-mode-alist '("\\.h\\'"  . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.hh\\'"  . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.hpp\\'"  . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.cc\\'"  . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.cpp\\'"  . c++-mode))
+
+
 (provide 'mode-mappings)
