@@ -17,6 +17,16 @@
     (emacs-lisp-mode)
     ))
 
+
+(defun three-up ()
+  "Splits frame evenly into three buffers."
+  (interactive)
+  (command-execute 'split-window-horizontally)
+  (command-execute 'split-window-horizontally)
+  (command-execute 'balance-windows)
+)
+
+
 (defun toggle-window-split ()
   (interactive)
   (if (= (count-windows) 2)
